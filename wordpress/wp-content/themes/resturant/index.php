@@ -1,61 +1,9 @@
-<!DOCTYPE html>
-<html class="no-js" lang="<?php bloginfo("language"); ?>">
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Electronic Restaurant Menu where you can browse our meals and drinks in an easier way and choose what you prefer.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php bloginfo("name"); ?></title>
-  <link rel="icon" href="<?php echo get_bloginfo('template_directory') ?>/assits/img/logo.png">
 
-    <!-- start css -->
+<!-- Start Header -->
 
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assits/css/all.css">    
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assits/css/normalize.css"> 
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assits/css/aos.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assits/css/style-rtl.css">    
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assits/css/style.css"> 
-   
-        
-    <!-- end css -->
-         <!-- تغيير اللاتجاه حسب اللغة -->
-         <?php if(is_rtl()): ?>
-          <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assits/css/style-rtl.css">
-        <?php else: ?>
-          <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assits/css/style.css">
-            <?php endif; ?>
-   <!-- تغيير اللاتجاه حسب اللغة -->
+<?php get_header(); ?>
 
-
-</head>
-<body>
-
-  <!-- Start Page Loader -->
-  <div class="pageLoader"></div>
-
-  <!-- Start Header -->
-  <header class="header">
-    <div class="container">
-      <div class="row justifyContentBetween alignItemsCenter">
-        <div class="logo">
-          <a href="#"><img src="<?php echo get_bloginfo('template_directory') ?>/assits/img/logo.png" alt="logo"></a>
-        </div>
-        <button type="button" class="nav-toggler" name="togglerButton">
-          <span></span>
-        </button>
-
-        <nav class="nav">
-          <ul>
-            <li class="navItem"><a href="#home">home</a></li>
-            <li class="navItem"><a href="#about">about</a></li>
-            <li class="navItem"><a href="#ourMenu">our menu</a></li>
-            <li class="navItem"><a href="#testim">testimonials</a></li>
-            <li class="navItem"><a href="#team">team</a></li>
-            <li class="navItem"><a href="#contact">contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+<!-- end Header ---->
 
   <!-- Start Home Section -->
   <section class="homeSection" id="home">
@@ -68,7 +16,6 @@
           <!-- <a href="<?php echo site_url(); ?>"> -->
                  <?php bloginfo("description"); ?>
           </h1>
-
           <p>Join us for your next meal. We get the juices flowing <br> Always expect
             GREAT TASTE, GOOD TIMES</p>
           <a href="#ourMenu" class="btn btnDefault">our menu</a>
@@ -415,48 +362,7 @@
   </section>
 
   <!-- Start Footer -->
-  <footer class="footer" id="contact">
-    <div class="container">
-      <div class="row footerItemContainer">
-        <div class="footerItem" data-aos="fade-up" data-aos-duration="1000">
-          <h3>our location</h3>
-          <p>xyz Street, Sector-12, <br> New Delhi - 000***</p>
-        </div>
-        <div class="footerItem" data-aos="fade-up" data-aos-duration="1000">
-          <h3>opening hours</h3>
-          <p>Monday to Sunday <br> 9:00 AM - 10:00 PM</p>
-        </div>
-        <div class="footerItem" data-aos="fade-up" data-aos-duration="1000">
-          <h3>contact us</h3>
-          <p>91 9654 293 *** <br> info@gmail.com</p>
-          <div class="socialLinks">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="row" data-aos="fade-down" data-aos-duration="1000">
-        <div class="copyright">
-          &copy; 2021 - Designed by Ahmed Hafez
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  <!-- Start TO TOP BUTTON -->
-  <div id='toTop'>
-    <i class="fas fa-angle-double-up fa-lg totop-icon" title="Go To Top"></i>
-  </div>
-  <!-- -------------------------------- End Of The Project -------------------------------- -->
-  
+  <?php get_footer(); ?>
 
-
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assits/js/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assits/js/all.js"></script>   
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assits/js/aos.js"></script>   
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assits/js/script.js"></script>   
-
-</body>
-</html>
+  <!-- end Footer -->
